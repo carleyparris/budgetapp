@@ -1,1 +1,14 @@
-<p>setup works!</p>
+<h1 *ngIf="displayText">{{welcomeText}}</h1>
+<ul>
+    <li *ngFor = "let number of testArray">
+        {{number}}
+    </li>
+</ul>
+
+<button (click)="toggleText()">Toggle text</button>
+
+<input [(ngModel)]="username">
+
+<p>Hello {{username}}!</p>
+
+<button (click)="changeText()">Change text</button>
